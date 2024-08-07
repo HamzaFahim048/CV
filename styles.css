@@ -103,4 +103,7 @@ body {
     margin-top: 40px;
   }
   
-  
+  section p {
+    text-align: justify;
+  }
+    
