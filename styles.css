@@ -23,23 +23,36 @@ body {
   }
   
   .profile-picture {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 20px;
+    border-radius: 70%;
+    width: 160px;
+    height: 170px;
+    object-fit: fill;
+    margin-bottom: 0px;
   }
   
   h1 {
-    font-size: 2.5em;
-    margin-bottom: 5px;
-    color: #007bff;
+    font-size: 3em;
+    color: #007bff
   }
   
   h2 {
     font-size: 1.5em;
-    margin-bottom: 10px;
     color: #555;
+  }
+
+    
+  h3 {
+    font-size: 1.2em;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+  }
+
+  h4{
+    font-size: 1em;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
   }
   
   .contact-info {
@@ -59,14 +72,7 @@ body {
   section {
     margin-bottom: 30px;
   }
-  
-  h3 {
-    font-size: 1.2em;
-    color: #007bff;
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-  }
+
   
   p, ul, ol {
     margin: 0 0 15px;
@@ -106,4 +112,32 @@ body {
   section p {
     text-align: justify;
   }
-    
+
+
+
+  
+  @media (max-width: 900px) {
+    .main {
+      grid-template-columns: 1fr;
+      height: auto;
+    }
+  }
+   
+  @media (max-width: 600px) {
+    #root {
+      padding: 24px;
+    }
+   
+    .header {
+      flex-direction: column;
+      gap: 16px;
+    }
+   
+    .fact-form {
+      padding: 16px;
+    }
+   
+    .fact {
+      padding: 12px 16px;
+    }
+  }    
